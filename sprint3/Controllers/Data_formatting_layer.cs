@@ -13,7 +13,7 @@ namespace sprint3.Controllers
             SM text_message = new SM();
             String temp = "";
             foreach (var item in db.notifications_temp)
-            {
+            {	//Added this checking condition for future reference
                 if (item.func == request)
                 {
                     temp = item.content_text;
