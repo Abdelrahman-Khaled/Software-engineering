@@ -14,7 +14,9 @@ using WebApi.Models;
 namespace WebApi.Controllers
 {
     public class QueuesController : ApiController
-    {
+    {   /// <summary>
+    /// setting up the data base connection with the queue model/class
+    /// </summary>
         private Booking_SystemDBEntities db = new Booking_SystemDBEntities();
 
         // GET: api/Queues
